@@ -1,0 +1,7 @@
+<ng-container *ngIf="counter$|async as counter;else error">
+  <p class="counter">{{ counter.count}}</p>
+  <p class="counter">Double: {{ counter.count * 2 }}</p>
+</ng-container>
+<ng-template #error>
+  <p>something went wrong</p>
+</ng-template>
